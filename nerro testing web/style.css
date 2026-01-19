@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b1a2f;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #0f2a4d;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.95rem;
+}
+
+.top-bar a {
+    color: #ffd6b0;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url("images/hero.png") center/cover no-repeat;
+}
+
+.overlay {
+    background: rgba(11,26,47,0.88);
+    min-height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 520px;
+    max-width: 92%;
+    margin-bottom: 20px;
+}
+
+/* TAGLINE */
+.overlay h2 {
+    font-family: 'Cinzel', serif;
+    color: #ffd6b0;
+    font-size: 1.7rem;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    max-width: 650px;
+    opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.dark {
+    background: #081426;
+}
+
+.section h3 {
+    color: #d4af37;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 820px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* FEATURES */
+.features {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.features div {
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 22px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+}
+
+/* IMAGES */
+.section img {
+    margin-top: 40px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 18px;
+    border: 2px solid rgba(212, 175, 55, 0.55);
+    padding: 8px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* LINKS */
+a {
+    color: #ffd6b0;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #050c18;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    font-size: 26px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .logo {
+        width: 420px;
+    }
+
+    .overlay h2 {
+        font-size: 1.35rem;
+    }
+}
